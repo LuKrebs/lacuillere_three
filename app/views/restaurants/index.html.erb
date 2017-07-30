@@ -1,0 +1,6 @@
+<h2>Find lots of restaurants</h2>
+<ol>
+<% @restaurants.each do |restaurant| %>
+  <li><%= restaurant[:name]%> (<%= restaurant[:address] %>)</li>
+<% end %>
+</ol>
